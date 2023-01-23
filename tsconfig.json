@@ -1,0 +1,73 @@
+{
+  "compilerOptions": {
+    "allowJs": false,
+    "checkJs": false,
+
+    "incremental": true,
+    "composite": false,
+
+    "declaration": false,
+    "declarationMap": false,
+
+    "resolveJsonModule": true,
+    "allowUmdGlobalAccess": false,
+
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "target": "ESNext",
+    "lib": ["ESNext"],
+    "plugins": [
+      {
+        "transform": "@zoltu/typescript-transformer-append-js-extension/output/index.js",
+        "after": true
+      }
+    ],
+
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+
+    "sourceMap": false,
+
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "alwaysStrict": true,
+    "exactOptionalPropertyTypes": false,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+
+    "strict": true,
+    "strictBindCallApply": true,
+    "strictFunctionTypes": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "useUnknownInCatchVariables": false,
+
+    "disableSizeLimit": true,
+
+    "esModuleInterop": true,
+
+    "forceConsistentCasingInFileNames": true,
+
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+
+    "outDir": "./dist",
+    "tsBuildInfoFile": "./build/.tsbuildinfo",
+    "watch": false,
+    "removeComments": true
+  },
+
+  "include": [
+    "./src/**/*.ts",
+    "./src/**/*.json"
+  ],
+
+  "exclude": [ "./node_modules"]
+}
